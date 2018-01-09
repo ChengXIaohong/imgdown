@@ -75,7 +75,7 @@ public class DownPic {
 	}
 	
 	/**
-	 * 便利Map 下载图片
+	 * 遍历Map 下载图片
 	 * @param map
 	 */
 	public static void downLoad(Map<String, String> map) {
