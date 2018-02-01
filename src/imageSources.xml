@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls>
+	<url name = "gratisography">
+		<value>https://gratisography.com/</value>
+	</url>
+	<url name = "pixabay">
+		<value>https://pixabay.com/</value>
+	</url>
+</urls>
