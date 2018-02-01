@@ -41,6 +41,11 @@ public class Constans {
 	 */
 	public static int downFailCount = 0;
 	
+	/**
+	 * 爬取地址文件路径
+	 */
+	public static String SOURCES_XML_PATH = "imageSources.xml";
+	
 	
 	public static MianView getMianView() {
 		if(CxhUtil.isEmpty(mainViewInstance)) {
@@ -57,5 +62,7 @@ public class Constans {
 		Constans.downSuccessCount = 0;
 		Constans.downFailCount = 0;
 	}
+	
+	public static String[] downNum = {"全部","20","50","80","100"};
 	
 }

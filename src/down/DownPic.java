@@ -19,6 +19,7 @@ import javax.swing.JOptionPane;
 
 
 import cons.Constans;
+import cons.DynamicConstans;
 import util.CxhUtil;
 import view.ShowMessage;
 
@@ -120,10 +121,8 @@ public class DownPic {
 		try {
 			if(CxhUtil.isNotEmpty(url) && url.startsWith("http")) {
 				inputS = new URL(url).openStream();
-				//»ñÈ¡Í¼Æ¬´æ´¢Â·¾¶
-				String fileOutPath = Constans.getMianView().textFilePath.getText();
-				
-				outputS = new FileOutputStream(fileOutPath + "/" +  alt + url.substring(url.length()-4));
+			
+				outputS = new FileOutputStream(DynamicConstans.imageSavePath + "/" +  alt + url.substring(url.length()-4));
 				//¸´ÖÆÍ¼Æ¬
 				int len;
 				byte[] arr = new byte[1024];
